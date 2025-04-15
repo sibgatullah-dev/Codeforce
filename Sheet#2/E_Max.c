@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<limits.h>
 int main(){
     int N;
     scanf("%d",&N);
     int num;
-    int max = 0;
+    int max = INT_MIN;// if we use INT_MIN then it will give use the smallest int number
     for(int i = 1;i<=N;i++){
         scanf("%d",&num);
         if(num>max){
