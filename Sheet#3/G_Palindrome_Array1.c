@@ -3,23 +3,26 @@ int main(){
     int N;
     scanf("%d",&N);
     int A[N];
+    int B[N];
     for (int i = 0; i < N; i++)
     {
         scanf("%d",&A[i]);
     }
-    int x = 0;
-    int y = N-1;
-    int p = 1;
-    while (x<y)
+    for (int i = N-1,j=0; i >= 0; i--,j++)
     {
-        if (A[x]!=A[y])
+         B[j] = A[i];
+    }
+
+    int p = 1;
+    for (int i = 0; i < N; i++)
+    {
+        if (A[i]!=B[i])
         {
             p = 0;
         }
-        x++;
-        y--;
+        
     }
-
+    
     if (p == 1)
     {
         printf("YES");
