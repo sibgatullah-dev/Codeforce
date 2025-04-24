@@ -8,7 +8,7 @@ int main(){
     {
         scanf("%d",&A[i]);
     }
-    for (int i = N-1,j=0; i >= 0; i--,j++)
+    for (int i = N-1,j=0; i >= 0; i--,j++)// Taking inputs in second array B
     {
          B[j] = A[i];
     }
