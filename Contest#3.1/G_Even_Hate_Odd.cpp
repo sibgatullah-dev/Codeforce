@@ -44,3 +44,32 @@ int main() {
     }
     return 0;
 }
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int tc; cin >> tc;
+//     while (tc--) {
+//         int n; cin >> n;
+//         if (n % 2 != 0) {
+//             cout << -1 << endl;
+//         } else {
+//             int h = n / 2;
+//             vector<int> a(n);
+//             for (int i = 0; i < n; i++) {
+//                 cin >> a[i];
+//             }
+//             int e = 0;
+//             for (int i = 0; i < n; i++) {
+//                 if (a[i] % 2 == 0) {
+//                     e++;
+//                 }
+//             }
+//             // Minimum operations is abs(h - e)
+//             cout << abs(h - e) << endl;
+//         }
+//     }
+// }
